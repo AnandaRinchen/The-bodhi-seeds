@@ -1,52 +1,56 @@
-# The Seeds of Wisdom
+# 🌱 The Seeds of Wisdom
 
-A landing page for **Khenpo Kunga Rinchen** and the young monks of **Rela Monastery Primary School** in Nangchen, Kham — an editorial-style site to share the school's story and invite support.
+An editorial landing page for **Khenpo Kunga Rinchen** and the young monks of **Rela Monastery Primary School** in Nangchen, Kham — a remote Sakya school nestled among the highest peaks on Earth.
 
-## 🚀 Deploy to GitHub Pages (3 steps)
-
-1. Create a new repository on GitHub (e.g. `seeds-of-wisdom`).
-2. Upload the contents of this folder to the repo (drag-and-drop in the GitHub web UI works fine).
-3. Go to **Settings → Pages**, set **Source** to `Deploy from a branch` → `main` → `/ (root)` → **Save**.
-
-Your site will be live at:
-```
-https://<your-username>.github.io/<repo-name>/
-```
-
-## 📁 What's inside
-
-```
-.
-├── index.html          ← the entire site (single file, no build step)
-├── images/             ← all photos & letter scans
-│   ├── khenpo-large.jpg
-│   ├── khenpo-portrait.jpg
-│   ├── monastery-mountains.jpg
-│   ├── young-monks.jpg
-│   ├── monks-orange.jpg
-│   ├── letter-sakya-trizin.jpg
-│   ├── letter-monastery.jpg
-│   └── letter-luding-khenchen.jpg
-└── README.md
-```
-
-## ✏️ Editing the site
-
-Everything lives in `index.html`. Common edits:
-
-- **Change copy** → search for the section in plain English and edit the text.
-- **Replace a photo** → drop a new image into `/images/` with the same filename, or change the `src=""` attribute.
-- **Adjust colors** → at the top of the `<style>` block, edit the `:root { --paper, --maroon, --saffron, --teal ... }` variables.
-- **Update donation tiers** → search for `<div class="tier"` and edit the four cards.
-- **Hook up a real donation provider** → replace the `<a href="#contact">` button with a link to your PayPal / Stripe / bank-transfer instructions.
-
-## 🎨 Design
-
-- **Aesthetic**: editorial / sacred-manuscript — warm parchment background, monastic maroon, saffron and teal accents, deep serif typography (*Cormorant Garamond* + *EB Garamond*).
-- **No build tools** — pure HTML / CSS / a few lines of vanilla JS. Loads fast, works on every browser.
-- **Fully responsive** — looks great from phone to desktop.
-- **Accessible** — semantic HTML, alt text on all images, respects `prefers-reduced-motion`.
+> *"Each child we educate is a lamp we light for the future, illuminating a world that needs more peace and wisdom."* — Khenpo Kunga Rinchen
 
 ---
 
-*Sarva Maṅgalam* — May all be auspicious.
+## 🚀 Deploy to GitHub Pages — 3 simple steps
+
+This version is **self-contained** — all images are embedded inside `index.html`. No separate `images/` folder, no broken links, no path issues. Just one file.
+
+### 1. Upload `index.html` to your repo
+- Go to your repo on github.com
+- Click **Add file → Upload files**
+- Drag in just `index.html` (and `README.md`, `.nojekyll` if you want)
+- Click **Commit changes**
+
+### 2. Turn on GitHub Pages
+- Click **Settings** (top of repo)
+- Left sidebar → **Pages**
+- Under **Source** → select **Deploy from a branch**
+- Branch: **`main`** · Folder: **`/ (root)`** → click **Save**
+
+### 3. Visit your site
+After 1–2 minutes, GitHub will show you the live URL:
+```
+https://<your-username>.github.io/seeds-of-wisdom/
+```
+
+That's it. No image folders to manage. No filename issues. It just works.
+
+---
+
+## ✏️ Editing the site
+
+Open `index.html` in any text editor (Notepad, TextEdit, VS Code — anything works).
+
+- **Change copy** — search for the text and edit it
+- **Adjust colors** — at the top of the `<style>` block, edit the `:root` variables
+- **Hook up a real donation provider** — replace the `MAKE A CONTRIBUTION` link with a PayPal / Stripe URL
+
+To replace an image, you'd need to convert your new image to a base64 data URI and replace the corresponding `src="data:image/jpeg;base64,..."` block. Or just ask for a new version.
+
+---
+
+## 🎨 Design
+
+- **Aesthetic** — editorial / sacred-manuscript: warm parchment, monastic maroon, saffron accents
+- **Typography** — *Cormorant Garamond* (display) + *EB Garamond* (body) + *DM Mono* (small caps)
+- **Responsive** — looks great from phone to desktop
+- **Single file** — ~900 KB, all images embedded, no external assets except Google Fonts
+
+---
+
+*Sarva Maṅgalam* — 🙏 May all be auspicious.
